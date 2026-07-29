@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PartX — Merchant Tools Platform</title>
+    <meta name="description" content="PartX is a merchant tools platform providing order management, inventory tracking, payment processing, and business analytics." />
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #1a1a2e;
+            background: #f8f9fc;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ── Hero ── */
+        .hero {
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #fff;
+            text-align: center;
+            padding: 5rem 1.5rem 4rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero .logo {
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+        }
+        .hero .tagline {
+            font-size: 1.1rem;
+            opacity: 0.7;
+            margin-top: 0.4rem;
+            font-weight: 400;
+        }
+        .hero h1 {
+            font-size: 1.6rem;
+            font-weight: 300;
+            margin-top: 2rem;
+            opacity: 0.9;
+        }
+        .hero p {
+            max-width: 540px;
+            margin: 1rem auto 0;
+            font-size: 1rem;
+            opacity: 0.65;
+            line-height: 1.7;
+        }
+
+        /* ── Document Cards ── */
+        .docs-grid {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .doc-card {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+            backdrop-filter: blur(4px);
+            border-radius: 16px;
+            padding: 2rem 2rem 1.8rem;
+            width: 280px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            transition: background 0.25s, transform 0.2s, border-color 0.25s;
+        }
+        .doc-card:hover {
+            background: rgba(255,255,255,0.14);
+            border-color: rgba(255,255,255,0.25);
+            transform: translateY(-3px);
+        }
+        .doc-card .icon {
+            font-size: 2.2rem;
+            margin-bottom: 0.6rem;
+            display: block;
+        }
+        .doc-card .title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            display: block;
+        }
+        .doc-card .desc {
+            font-size: 0.85rem;
+            opacity: 0.65;
+            margin-top: 0.4rem;
+            display: block;
+            line-height: 1.5;
+        }
+        .doc-card .arrow {
+            display: inline-block;
+            margin-top: 0.8rem;
+            font-size: 0.85rem;
+            opacity: 0.6;
+            transition: opacity 0.2s, transform 0.2s;
+        }
+        .doc-card:hover .arrow {
+            opacity: 1;
+            transform: translateX(4px);
+        }
+
+        /* ── Footer ── */
+        .hero-footer {
+            margin-top: 3.5rem;
+            font-size: 0.8rem;
+            opacity: 0.4;
+        }
+        .hero-footer a { color: #fff; text-decoration: none; }
+        .hero-footer a:hover { text-decoration: underline; opacity: 0.7; }
+
+        @media (max-width: 640px) {
+            .hero { padding: 3rem 1rem 2.5rem; }
+            .hero .logo { font-size: 2.5rem; }
+            .doc-card { width: 100%; max-width: 320px; padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="logo">PartX</div>
+    <div class="tagline">Merchant Tools Platform</div>
+    <h1>Legal &amp; Compliance</h1>
+    <p>Welcome to the PartX legal information centre. Here you'll find our Privacy Policy and Terms of Service that govern your use of our merchant tools platform.</p>
+
+    <div class="docs-grid">
+        <a href="/privacy-policy" class="doc-card">
+            <span class="icon">&#x1F512;</span>
+            <span class="title">Privacy Policy</span>
+            <span class="desc">How we collect, use, and protect your personal data and business information.</span>
+            <span class="arrow">&rarr; Read</span>
+        </a>
+        <a href="/terms-of-service" class="doc-card">
+            <span class="icon">&#x1F4DC;</span>
+            <span class="title">Terms of Service</span>
+            <span class="desc">The terms and conditions that govern your use of the PartX platform.</span>
+            <span class="arrow">&rarr; Read</span>
+        </a>
+    </div>
+
+    <div class="hero-footer">
+        <a href="https://partx.app">partx.app</a>
+        <span style="margin:0 0.6rem;opacity:0.3;">&middot;</span>
+        <span>&copy; 2026 PartX</span>
+    </div>
+</section>
+
+</body>
+</html>
